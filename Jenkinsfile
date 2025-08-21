@@ -7,7 +7,7 @@ pipeline {
              sh '''
                 helm repo add bitnami https://charts.bitnami.com/bitnami
                 helm repo update
-                helm install my-nginx bitnami/nginx --namespace nginx --create-namespace
+                helm install my-nginx2 bitnami/nginx --namespace nginx --create-namespace
              '''
             }
         }
