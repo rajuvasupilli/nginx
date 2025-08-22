@@ -6,6 +6,7 @@ pipeline {
             steps {
              sh '''
                kubectl run nginx --image=nginx --context docker-desktop
+               kubectl get pods --context docker-desktop
              '''
             }
         }
