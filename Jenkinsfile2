@@ -5,7 +5,7 @@ pipeline {
         stage('Install-Nginx') {
             steps {
              sh '''
-               kubectl create nginx --image=nginx --context docker-desktop
+               kubectl run nginx --image=nginx --context docker-desktop
              '''
             }
         }
